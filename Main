@@ -1,0 +1,122 @@
+# Internal IT Audit: LunoCraft Games
+
+## Overview
+
+**LunoCraft Games** is a small U.S.-based business that designs and distributes educational and entertainment video games. With an expanding online presence, the company now serves a global customer base through digital storefronts. The IT department is under pressure to manage growth while ensuring data security, compliance, and business continuity.
+
+To address emerging risks, the IT manager has initiated an **internal audit** aligned with the **NIST Cybersecurity Framework (CSF)**. This document includes the audit scope, goals, risk assessment, a detailed controls checklist, a compliance checklist, and recommendations for improving the company's security posture.
+
+---
+
+## Scope
+
+The audit covers the entire security ecosystem of LunoCraft Games, including:
+
+- Physical and digital assets
+- Internal IT systems and infrastructure
+- Software and third-party services
+- Data management policies
+- Compliance with cybersecurity standards
+
+---
+
+## Goals
+
+- Identify and assess current IT assets
+- Evaluate cybersecurity controls and compliance practices
+- Detect gaps and weaknesses in the existing posture
+- Provide recommendations to improve infrastructure and meet global standards
+
+---
+
+## Current Assets
+
+- On-premises hardware for development and administration
+- Developer devices (laptops, desktops, VR headsets, etc.)
+- Digital distribution and game licensing platforms
+- Cloud services (payment processing, CRM, analytics, etc.)
+- Internal network and internet services
+- Game servers and development environments
+- Data storage (customer info, game analytics, support tickets)
+- Legacy applications and testing systems
+
+---
+
+## Risk Assessment
+
+### Risk Description
+LunoCraft lacks proper asset management, data access controls, and encryption. It is at risk of violating global compliance standards, particularly **PCI DSS** and **GDPR**.
+
+### Risk Score: 8/10
+High risk due to inadequate controls and weak compliance adherence.
+
+### Impact
+- Potential data breaches
+- Legal penalties (especially in the EU)
+- Loss of user trust and business continuity disruptions
+
+---
+
+## Controls Assessment Checklist
+
+| Control                  | In Place? | Explanation                                                                 |
+|--------------------------|-----------|-----------------------------------------------------------------------------|
+| Least Privilege          | No        | Staff have full access to all user data—access control needed               |
+| Disaster Recovery Plan   | No        | No documented process for system/data recovery in case of disruption        |
+| Firewall                 | Yes       | Active firewall with traffic control rules                                  |
+| Password Policies        | ?         | Policy exists but lacks complexity and enforcement                          |
+| Antivirus                | Yes       | Antivirus is installed and regularly monitored                              |
+| Backups                  | No        | No regular data backups (full or incremental)                               |
+| Encryption               | No        | Data at rest and in transit not currently encrypted                         |
+| IDS                      | No        | No intrusion detection system is in place                                   |
+| Studio Access Control    | Yes       | Physical access is controlled with keycards                                 |
+| CCTV                     | Yes       | Active surveillance at key access points                                    |
+| Fire Detection           | Yes       | Fire detection and suppression systems are operational                      |
+
+---
+
+## Compliance Checklist
+
+### PCI DSS
+
+| Best Practice                                | In Place? | Explanation                                                              |
+|----------------------------------------------|-----------|--------------------------------------------------------------------------|
+| Restrict access to card data                 | No        | All staff can view credit card info—access needs to be restricted        |
+| Secure storage of card info                  | No        | Payment data is stored without encryption                                |
+| Encryption of card data                      | No        | Data is not encrypted during storage or transmission                     |
+
+### GDPR
+
+| Best Practice                         | In Place? | Explanation                                                          |
+|---------------------------------------|-----------|----------------------------------------------------------------------|
+| Protect EU customer data              | No        | No GDPR compliance measures implemented for EU residents             |
+| Maintain privacy policies             | Yes       | A privacy policy exists but needs to be updated for global compliance|
+
+### SOC (System and Organization Controls)
+
+| Best Practice                          | In Place? | Explanation                                                              |
+|----------------------------------------|-----------|--------------------------------------------------------------------------|
+| Enforce user access controls           | No        | No formal access controls or user role restrictions                      |
+| Maintain data integrity                | Yes       | Basic integrity checks for customer and game data                        |
+| Restrict data access to authorized users| No        | No granular control over who can access sensitive information           |
+
+---
+
+## Recommendations
+
+To strengthen LunoCraft Games' security posture, the following improvements are recommended:
+
+1. **Implement Least Privilege** – Limit access based on roles and responsibilities.
+2. **Develop a Disaster Recovery Plan** – Include regular backups and restoration procedures.
+3. **Improve Password Policies** – Enforce complexity rules and use MFA.
+4. **Enable Data Encryption** – Encrypt both stored and transmitted data.
+5. **Deploy IDS** – Monitor network activity for unauthorized access.
+6. **Achieve Compliance** – Begin the process of meeting **PCI DSS**, **GDPR**, and **SOC** standards.
+
+---
+
+## Conclusion
+
+LunoCraft Games has the potential to become a leading digital entertainment provider, but it must act quickly to improve cybersecurity and compliance. Addressing the identified risks and implementing these recommendations will enhance resilience, reduce regulatory exposure, and protect its growing global user base.
+
+---
